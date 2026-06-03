@@ -35,7 +35,7 @@ DISENO_FINAL_JUANCAMILO_JEN/
     └── RESUMEN-PROYECTO.md              ← documento maestro: modelo, enums, endpoints, reglas
 ```
 
-> **`wiki/` es un repo git aparte** (remote `https://github.com/NicoalsD/DISENO_FINAL_JUANCAMILO_JEN.wiki.git`, rama `master`). Para publicar cambios de la wiki: `cd wiki && git add -A && git commit && git pull --rebase origin master && git push origin master`. NO confundir con el repo principal (rama `main`).
+> **`wiki/` es un repo git aparte** (remote `https://github.com/JuAnK0718/chanchaya-diseno-software.wiki.git`, rama `master`). Para publicar cambios de la wiki: `cd wiki && git add -A && git commit && git pull --rebase origin master && git push origin master`. NO confundir con el repo principal (rama `main`).
 
 ## Fuente de verdad
 
@@ -64,6 +64,6 @@ DISENO_FINAL_JUANCAMILO_JEN/
 ## Convenciones
 
 - Nombres de dominio en español (`Cancha`, `reservasIds`). Documentación en español.
-- Los `HU-XX` y `EC-XX` enlazan a issues de GitHub; el placeholder `JuanCamilo/CanchaYa` debe reemplazarse por el repo real.
+- Los `HU-XX` y `EC-XX` identifican historias de usuario y escenarios de calidad descritos en la wiki.
 - Entorno: **Windows + PowerShell**. Usar la herramienta PowerShell (no asumir comandos Unix).
 - Al implementar, respetar las **6 reglas de negocio** y los **14 RNF** de `wiki/3.-Requisitos-no-Funcionales.md`.
