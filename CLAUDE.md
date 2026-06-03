@@ -4,7 +4,7 @@ Guía para Claude (u otro agente) que retome este repositorio. Léela antes de a
 
 ## Qué es
 
-**CanchaYa**: backend REST de reservas de canchas deportivas (ciudad de Pasto). Proyecto final de **Diseño de Software**, Universidad Cooperativa de Colombia (UCC), Campus Pasto, semestre **2026-1**. Objetivo académico: demostrar los pilares de la **POO** (herencia, polimorfismo, abstracción, encapsulamiento) sobre una arquitectura en capas.
+**CanchaYa**: backend REST de reservas de canchas deportivas (ciudad de Pasto). Proyecto final de **Ingeniería de Software**, Universidad Cooperativa de Colombia (UCC), Campus Pasto, semestre **2026-1** (4.º semestre). Autor: **Juan Camilo Bastidas**. Objetivo académico: demostrar los pilares de la **POO** (herencia, polimorfismo, abstracción, encapsulamiento) sobre una arquitectura en capas.
 
 - **Stack previsto:** Java 17+ · Spring Boot 3.x · Maven · MongoDB (Spring Data).
 - **Auth:** HTTP Basic + Spring Security. Roles: `CLIENTE`, `ADMIN_ESTABLECIMIENTO`.

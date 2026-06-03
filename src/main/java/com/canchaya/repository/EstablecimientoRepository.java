@@ -10,5 +10,5 @@ public interface EstablecimientoRepository extends MongoRepository<Establecimien
 
     /** Busca el establecimiento administrado por un usuario (id del @DBRef administrador). */
     @Query("{ 'administrador.$id' : ?0 }")
-    Establecimiento findByAdminId(String adminId);
+    Establecimiento findByAdministradorId(String adminId);
 }
