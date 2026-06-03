@@ -55,6 +55,12 @@ Cada entidad tiene constructor sin argumentos, constructor completo, getters/set
 | GET | `/reservas` | clienteId | Historial de reservas del cliente |
 | PATCH | `/reservas/{reservaId}/cancelar` | - | Cancelar reserva |
 
+## Pruebas de endpoints
+
+Los 9 endpoints se probaron en cadena contra la instancia de MongoDB Atlas (registro → login → establecimiento → cancha → reserva → cancelación). Todos responden correctamente: `200 OK` (o `204 No Content` en la cancelación). La reserva nace `CONFIRMADA` con `horaFin` calculada automáticamente (`10:00` + 60 min = `11:00`) y la contraseña se guarda con hash BCrypt.
+
+![Pruebas de los endpoints REST](docs/postman-pruebas.png)
+
 ## Notas de diseno
 
 - El diagrama de capas no incluye una clase de seguridad ni DTOs, por eso no existen. Las contrasenas se guardan hasheadas con BCrypt directamente en `UsuarioService`.
