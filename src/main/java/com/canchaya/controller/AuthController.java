@@ -23,8 +23,9 @@ public class AuthController {
     @PostMapping("/registro")
     public ResponseEntity<Usuario> registrarCliente(@RequestParam String nombre,
                                                     @RequestParam String email,
-                                                    @RequestParam String password) {
-        return ResponseEntity.ok(usuarioService.registrarNuevoCliente(nombre, email, password));
+                                                    @RequestParam String password,
+                                                    @RequestParam(required = false) String telefono) {
+        return ResponseEntity.ok(usuarioService.registrarNuevoCliente(nombre, email, password, telefono));
     }
 
     @PostMapping("/login")

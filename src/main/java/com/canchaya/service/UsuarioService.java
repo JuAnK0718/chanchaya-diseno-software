@@ -25,12 +25,12 @@ public class UsuarioService {
     }
 
     /** Registra un nuevo Cliente con la contrasena hasheada en BCrypt. */
-    public Usuario registrarNuevoCliente(String nombre, String email, String password) {
+    public Usuario registrarNuevoCliente(String nombre, String email, String password, String telefono) {
         if (usuarioRepository.findByEmail(email) != null) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "El email ya esta registrado");
         }
         String hash = passwordEncoder.encode(password);
-        Cliente cliente = new Cliente(UUID.randomUUID().toString(), nombre, null, email,
+        Cliente cliente = new Cliente(UUID.randomUUID().toString(), nombre, telefono, email,
                 hash, RolUsuario.CLIENTE, new ArrayList<>());
         return usuarioRepository.save(cliente);
     }

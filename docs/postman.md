@@ -22,11 +22,12 @@ Las pruebas van **en cadena**: copia el `id` que devuelve una respuesta y pégal
 
 **Parámetros (Body → x-www-form-urlencoded):**
 
-| Key | Value |
-|---|---|
-| `nombre` | `Juan Cliente` |
-| `email` | `juan.cliente@canchaya.com` |
-| `password` | `secreta123` |
+| Key | Value | Requerido |
+|---|---|---|
+| `nombre` | `Juan Cliente` | ✅ |
+| `email` | `juan.cliente@canchaya.com` | ✅ |
+| `password` | `secreta123` | ✅ |
+| `telefono` | `3001234567` | ❌ opcional |
 
 **Respuesta esperada — `200 OK`:**
 
@@ -34,12 +35,12 @@ Las pruebas van **en cadena**: copia el `id` que devuelve una respuesta y pégal
 {
   "id": "77476d2b-b246-4a3d-bfb3-0f86ed93c7fd",
   "nombre": "Juan Cliente",
-  "telefono": null,
+  "telefono": "3001234567",
   "email": "juan.cliente@canchaya.com",
   "passwordHash": "$2a$10$3Ic...",
   "rol": "CLIENTE",
   "reservas": [],
-  "resumenPerfil": "Juan Cliente - null"
+  "resumenPerfil": "Juan Cliente - 3001234567"
 }
 ```
 

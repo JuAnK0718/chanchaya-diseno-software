@@ -38,9 +38,9 @@ public class ReservaController {
                 reservaService.agendarReserva(clienteId, canchaId, fecha, horaInicio));
     }
 
-    @PatchMapping("/{reservaId}/cancelar")
-    public ResponseEntity<Void> cancelar(@PathVariable String reservaId) {
-        reservaService.procesarCancelacion(reservaId);
+    @PatchMapping("/{id}/cancelar")
+    public ResponseEntity<Void> cancelarReserva(@PathVariable String id) {
+        reservaService.procesarCancelacion(id);
         return ResponseEntity.noContent().build();
     }
 
