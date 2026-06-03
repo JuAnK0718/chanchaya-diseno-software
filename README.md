@@ -61,6 +61,10 @@ Los 9 endpoints se probaron en cadena contra la instancia de MongoDB Atlas (regi
 
 ![Pruebas de los endpoints REST](docs/postman-pruebas.png)
 
+Guía paso a paso para reproducir las pruebas en Postman (qué método, URL y parámetros poner en cada una): **[docs/postman.md](docs/postman.md)**.
+
+> Nota: los endpoints reciben parámetros (`@RequestParam`), no JSON. En Postman usa **Body → x-www-form-urlencoded** en los `POST`, y la pestaña **Params** en los `GET`/`PATCH`.
+
 ## Notas de diseno
 
 - El diagrama de capas no incluye una clase de seguridad ni DTOs, por eso no existen. Las contrasenas se guardan hasheadas con BCrypt directamente en `UsuarioService`.
