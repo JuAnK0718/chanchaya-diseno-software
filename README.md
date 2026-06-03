@@ -121,6 +121,6 @@ Los 9 endpoints probados en cadena contra MongoDB Atlas: registro → login → 
 
 ## Notas de diseño
 
-- Sin DTOs ni capa de seguridad separada: el diagrama no las define, no se implementan.
+- Sin DTOs: el diagrama de clases define las entidades del dominio como la representación directa del sistema; introducir DTOs agregaría una capa de transformación que el diseño no contempla y que, para un backend académico sin contratos de API externos, solo añade complejidad sin beneficio justificado.
 - `Cliente` y `AdminEstablecimiento` comparten la colección `usuarios` (herencia con discriminador `_class`).
 - Las franjas horarias no se persisten: la disponibilidad se calcula en tiempo de ejecución a partir de `horaApertura`, `horaCierre` y `duracionAlquilerMinutos`.
