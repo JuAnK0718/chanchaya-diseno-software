@@ -1,0 +1,16 @@
+# Wiki es un repo git aparte
+wiki/
+
+# Maven
+target/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Logs y temporales
+*.log
